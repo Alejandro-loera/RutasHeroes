@@ -1,0 +1,8 @@
+<div class="row" *ngIf="indice == -1">
+    <div class="col-md-12">
+        <div class="alert alert-info" role="alert">
+            No existe el superheroe que buscas: {{nombreh}}
+        </div>
+    </div>
+</div>
+<app-heroe *ngIf="indice != -1" [heroe]="miheroe" ></app-heroe>
